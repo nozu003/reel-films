@@ -1,0 +1,164 @@
+/* ---------------------------------- */
+/* IMPORTS */
+/* ---------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ---------------------------------- */
+/* GLOBAL */
+/* ---------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border-spacing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20;
+}
+
+/* ---------------------------------- */
+/* HEADER */
+/* ---------------------------------- */
+
+.header {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ---- section1 ----*/
+
+.header__section1 {
+    flex: 0 0 1%;
+}
+
+/* ---- section2 ----*/
+
+.header__section2 {
+    flex: 0 0 3%;
+    display: flex;
+    align-items: center;
+}
+
+.header__section2__list li a {
+    text-decoration: none;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 100%;
+    font-weight: 700;
+    color: black;
+    margin-top: 45px;
+    padding-top: 15px;
+    letter-spacing: 3px;
+}
+
+.header__section2__list li a:active,
+.header__section2__list li a:hover,
+.active {
+    padding-left: 10px;
+    border-left: 2px solid black;
+}
+
+/* ---- section3 ----*/
+
+.header__section3 {
+    flex: 0 0 17%;
+    background-color: white;
+    z-index: 10;
+}
+
+.header__section3 nav {
+    margin-right: 35px;
+    margin-left: 40px;
+}
+
+.header__section3 nav ul li {
+    display: inline-block;
+    padding: 20px 0 0 20px;
+}
+
+.header__section3 nav ul li a {
+    font-size: 200%;
+    color: black;
+}
+
+.ion-logo-youtube {
+    transition: color .2s;
+}
+.ion-logo-youtube:hover{
+    color: #FF0000;
+}
+
+.header__section3__div {
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__section3__div div {
+    font-family: 'Raleway';
+    padding: 10px;
+    font-size: 80%;
+    letter-spacing: 3px;
+}
+/* ---- section4 ----*/
+
+.header__section4 {
+    flex: 1;
+    background-image: url("../css/img/hero.jpg");
+    background-size: cover;
+    display: flex;
+    transform: scale(1.10);
+    transition: transform 1s;
+}
+
+.header__section4 nav ul li {
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 75px;
+}
+
+.header__section4 nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: font-size .2s;
+    font-style: italic;
+    letter-spacing: 3px;
+    padding: 0 40px 10px 0;
+}
+
+.header__section4 nav ul li a:active,
+.header__section4 nav ul li a:hover {
+    font-size: 105%;
+    border-bottom: 2px solid white;
+}
+
+.header__section4 div {
+    margin: 75px 90px 0 auto;
+    font-size: 300%;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+    line-height: 120%;
+    letter-spacing: 3px;
+}
+
+.header__section4 div p {
+    font-size: 30%;
+    font-family: 'Raleway';
+    font-style: italic;
+    text-transform: lowercase;
+
+    display: flex;
+    justify-content: flex-end;
+    line-height: 160%;
+}
+
+.scale-def {
+    transform: scale(1);
+}
+
+.a-spacing {
+    margin-left: 10px;
+}
