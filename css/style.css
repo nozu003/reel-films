@@ -50,13 +50,24 @@
     margin-top: 45px;
     padding-top: 15px;
     letter-spacing: 3px;
+
+    padding-left: 10px;
+}
+
+.header__section2__list li a:nth-child(2):link,
+.header__section2__list li a:nth-child(2):visited {
+    border-left: 2px solid transparent;
+    transition: border-left .2s;
 }
 
 .header__section2__list li a:active,
 .header__section2__list li a:hover,
-.active {
-    padding-left: 10px;
+.active-side-nav {
     border-left: 2px solid black;
+}
+
+.inactive-side-nav {
+    border-left: 2px solid transparent;
 }
 
 /* ---- section3 ----*/
@@ -151,17 +162,25 @@
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    transition: font-size .2s;
+    transition: font-size .2s, border-left .2s;
     font-style: italic;
     letter-spacing: 3px;
     padding: 0 40px 10px 0;
 }
 
+.header__section4 nav ul li a:nth-child(2):link,
+.header__section4 nav ul li a:nth-child(2):visited {
+    border-bottom: 2px solid transparent;
+}
 .header__section4 nav ul li a:active,
 .header__section4 nav ul li a:hover,
 .active-nav {
     font-size: 105%;
     border-bottom: 2px solid white;
+}
+
+.inactive-nav {
+    border-bottom: 2px solid transparent;
 }
 
 .header__section4 nav div {
