@@ -11,7 +11,7 @@ $(document).ready(function(){
       var header4 = $('.header__section4');
 
       if(document.readyState === 'ready' || document.readyState === 'complete'){
-        sleep(1050);
+        sleep(1250);
         header4.removeClass('animate__animated animate__pulse');
       }
 

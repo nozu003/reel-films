@@ -183,13 +183,6 @@
     line-height: 160%;
 }
 
-.scale-init {
-    transform: scale(1.10);
-}
-.scale-def {
-    transform: scale(1);
-}
-
 .a-spacing {
     margin-left: 0;
 }
