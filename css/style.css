@@ -82,11 +82,17 @@
     color: black;
 }
 
-.ion-logo-youtube {
+.ion-logo-youtube,
+.ion-logo-instagram {
     transition: color .2s;
 }
+
 .ion-logo-youtube:hover{
     color: #FF0000;
+}
+
+.ion-logo-instagram:hover {
+    color: #F58529;
 }
 
 .header__section3__div {

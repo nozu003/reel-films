@@ -23,6 +23,7 @@ $(document).ready(function(){
           $('.header__section4--desc').removeClass('hidden');
 
           $('.js--about').addClass('active-nav');
+          document.title = 'Reel Films | About';
         }
       });
 });
