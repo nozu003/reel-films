@@ -11,8 +11,10 @@ $(document).ready(function(){
       var header4 = $('.header__section4');
 
       if(document.readyState === 'ready' || document.readyState === 'complete'){
-        sleep(1250);
-        header4.removeClass('animate__animated animate__pulse');
+        // sleep(1250);
+        // header4.removeClass('animate__animated animate__pulse');
+
+        
       }
 
       $('.js--about').click(function(){
@@ -24,7 +26,7 @@ $(document).ready(function(){
           $('.header__section4--desc').removeClass('hidden');
 
           $('.js--about').addClass('active-nav');
-          
+
         }
       });
 });
