@@ -10,17 +10,12 @@ $(document).ready(function(){
 
       var header4 = $('.header__section4');
 
-      function scaleLoad(){
-        header4.addClass('scale-def');
-        header4.removeClass('scale-init');
-      }
-      
       if(document.readyState === 'ready' || document.readyState === 'complete'){
-          scaleLoad();
+        sleep(1050);
+        header4.removeClass('animate__animated animate__pulse');
       }
 
       $('.js--about').click(function(){
-
         if(header4.hasClass('header__section4--home')){
           header4.removeClass('header__section4--home');
           header4.addClass('header__section4--about animate__animated animate__pulse');
