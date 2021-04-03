@@ -16,6 +16,7 @@ $(document).ready(function(){
       }
 
       $('.js--about').click(function(){
+        document.title = "Reel Films | About";
         if(header4.hasClass('header__section4--home')){
           header4.removeClass('header__section4--home');
           header4.addClass('header__section4--about animate__animated animate__pulse');
@@ -23,7 +24,7 @@ $(document).ready(function(){
           $('.header__section4--desc').removeClass('hidden');
 
           $('.js--about').addClass('active-nav');
-          document.title = 'Reel Films | About';
+          
         }
       });
 });
