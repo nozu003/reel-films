@@ -8,11 +8,26 @@ $(document).ready(function(){
         } while (currentDate - date < milliseconds);
       }
 
+      var header4 = $('.header__section4');
+
       function scaleLoad(){
-        $('.header__section4').addClass('scale-def');
+        header4.addClass('scale-def');
+        header4.removeClass('scale-init');
       }
       
       if(document.readyState === 'ready' || document.readyState === 'complete'){
           scaleLoad();
       }
+
+      $('.js--about').click(function(){
+
+        if(header4.hasClass('header__section4--home')){
+          header4.removeClass('header__section4--home');
+          header4.addClass('header__section4--about animate__animated animate__pulse');
+          $('.header__section4--desc').addClass('visible');
+          $('.header__section4--desc').removeClass('hidden');
+
+          $('.js--about').addClass('active-nav');
+        }
+      });
 });

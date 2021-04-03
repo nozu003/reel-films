@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="vendor/css/normalize.css">
     <link rel="stylesheet" href="vendor/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendor/css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -39,15 +40,19 @@
             </div>
         </div>
 
-        <div class="header__section4" onload="scale()">
+        <div class="header__section4 header__section4--home scale-init">
             <nav>
                 <ul>
-                    <li><a href="#">about me</a></li>
-                    <li><a href="#" class="a-spacing">films</a></li>
+                    <li><a href="#" class="js--about">about me</a></li>
+                    <li><a href="#" class="js--filsm a-spacing">films</a></li>
                 </ul>
+                <div class="header__section4--desc hidden">
+                    <h6>about me</h6>
+                    <p class="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
             </nav>
 
-            <div>carl ivan<br>rodriguez <p>photographer <br>filmmaker</p></div>
+            <div>carl ivan<br>rodriguez <p class="jobs">photographer <br>filmmaker</p></div>
         </div>
 
     </header>

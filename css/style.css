@@ -105,11 +105,34 @@
 
 .header__section4 {
     flex: 1;
-    background-image: url("../css/img/hero.jpg");
     background-size: cover;
     display: flex;
-    transform: scale(1.10);
     transition: transform 1s;
+}
+
+.header__section4--home {
+    background-image: url("../css/img/hero.jpg");
+}
+
+.header__section4--about {
+    background-image: url("../img/about/about.jpg");
+}
+
+.header__section4--desc {
+    padding: 50px 0 0 50px;
+}
+
+.header__section4--desc h6 {
+    font-family: 'Raleway';
+    font-style: italic;
+}
+
+.header__section4--desc p {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 35%;
+
+    line-height: 180%;  
 }
 
 .header__section4 nav ul li {
@@ -129,9 +152,14 @@
 }
 
 .header__section4 nav ul li a:active,
-.header__section4 nav ul li a:hover {
+.header__section4 nav ul li a:hover,
+.active-nav {
     font-size: 105%;
     border-bottom: 2px solid white;
+}
+
+.header__section4 nav div {
+    text-transform: none;
 }
 
 .header__section4 div {
@@ -144,7 +172,7 @@
     letter-spacing: 3px;
 }
 
-.header__section4 div p {
+.jobs {
     font-size: 30%;
     font-family: 'Raleway';
     font-style: italic;
@@ -155,10 +183,21 @@
     line-height: 160%;
 }
 
+.scale-init {
+    transform: scale(1.10);
+}
 .scale-def {
     transform: scale(1);
 }
 
 .a-spacing {
-    margin-left: 10px;
+    margin-left: 0;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
 }
