@@ -12,15 +12,28 @@ $(document).ready(function(){
         sleep(1250);
         header4.removeClass('animate__animated animate__pulse');  
       }
+
+      function H4AnimChecker(){
+        const animChecker = document.querySelector('.animate__pulse');
+
+          animChecker.addEventListener('animationend', H4AnimationRemover());
+      }
       
       var header4 = $('.header__section4');
 
       if(document.readyState === 'ready' || document.readyState === 'complete'){
-           H4AnimationRemover();
+          H4AnimChecker();
       }
 
+      var ACisrunning = false;
+      
       $('.js--about').click(function(){
 
+        aboutCLick();
+
+      });
+
+      function aboutCLick(){
         document.title = "Reel Films | About";
 
         if(header4.hasClass('header__section4--home')){
@@ -31,13 +44,15 @@ $(document).ready(function(){
           $('.header__section4--desc').addClass('visible');
           $('.header__section4--desc').removeClass('hidden');
 
+          $('.js--about').removeClass('inactive-nav');
           $('.js--about').addClass('active-nav');
 
           $('.js--home').addClass('inactive-side-nav');
           $('.js--home').removeClass('active-side-nav');
-      
+          
         }
-      });
+        
+      }
       
       $('.js--home').click(function(){
 
@@ -55,6 +70,8 @@ $(document).ready(function(){
 
           $('.js--home').removeClass('inactive-side-nav');
           $('.js--home').addClass('active-side-nav');
+
+          header4.removeClass('animate__animated animate__pulse');
         }
       });
 });
