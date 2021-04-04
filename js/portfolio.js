@@ -11,7 +11,9 @@ $(document).ready(function(){
 
         if($header.hasClass("header__section4--home") || $header.hasClass("header__section4--about")){
             $header.removeClass("header__section4--home header__section4--about animate__animated animate__pulse animate__slow");
-            $header.addClass("header__section4--portfolio");
+            $header.addClass("header__section4--portfolio static-bg");
+            $header.removeClass("portfolio--films-collection");
+            
             $('.header__section4--portfolio-nav').removeClass("disp-none");
             $('.header__section4--portfolio-selection').removeClass("disp-none");
             $('.header__section4--portfolio-selection').addClass("disp-flex");
@@ -26,6 +28,11 @@ $(document).ready(function(){
 
             $('.js--home').addClass('inactive-side-nav');
             $('.js--portfolio').addClass('active-side-nav');
+
+            document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "PORTFOLIOS ";
         }
+
+        
     }
+
 });

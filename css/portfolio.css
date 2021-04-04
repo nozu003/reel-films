@@ -1,7 +1,15 @@
 /* ---- parent ----*/
 
-.header__section4--portfolio {
+/* .header__section4--portfolio {} */
+
+.static-bg {
     background-color: #111111FF;
+}
+
+.portfolio--films-collection {
+    background-image: url("../img/collections/COLLECTION\ PAGE\ BACKGROUND.jpg");
+    background-size: cover;
+    max-width: 100%;
 }
 
 /* ---- display functions ----*/
@@ -52,7 +60,9 @@
 }
 
 .header__section4--portfolio-nav--back:active,
-.header__section4--portfolio-nav--back:hover {
+.header__section4--portfolio-nav--back:hover,
+.i-back:active,
+.i-back:hover {
     cursor: pointer;
 }
 
@@ -68,6 +78,21 @@
 .header__section4--portfolio-selection--gallery:active,
 .header__section4--portfolio-selection--gallery:hover {
     cursor: pointer;
+}
+
+.header__section4--portfolio-selection--films-ch1,
+.header__section4--portfolio-selection--gallery-ch2 {
+    opacity: .7;
+    transition: opacity .2s;
+}
+
+
+.header__section4--portfolio-selection--films-ch1:active,
+.header__section4--portfolio-selection--films-ch1:hover,
+.header__section4--portfolio-selection--gallery-ch2:active,
+.header__section4--portfolio-selection--gallery-ch2:hover {
+    opacity: 1;
+    
 }
 .header__section4--portfolio-selection--films {
     background-image: url("../img/films/vlcsnap-2021-03-26-18h33m07s744.png");
