@@ -9,8 +9,8 @@ $(document).ready(function(){
       }
 
       function H4AnimationRemover(){
-        sleep(1250);
-        header4.removeClass('animate__animated animate__pulse');  
+        sleep(2000);
+        header4.removeClass('animate__animated animate__pulse animate__slow');  
       }
 
       function H4AnimChecker(){
@@ -24,8 +24,6 @@ $(document).ready(function(){
       if(document.readyState === 'ready' || document.readyState === 'complete'){
           H4AnimChecker();
       }
-
-      var ACisrunning = false;
       
       $('.js--about').click(function(){
 
@@ -41,7 +39,7 @@ $(document).ready(function(){
           header4.removeClass('header__section4--home');
           header4.addClass('header__section4--about animate__animated animate__pulse');
 
-          $('.header__section4--desc').addClass('visible');
+          $('.header__section4--desc').addClass('visible animate__animated animate__fadeIn');
           $('.header__section4--desc').removeClass('hidden');
 
           $('.js--about').removeClass('inactive-nav');
@@ -63,7 +61,7 @@ $(document).ready(function(){
           header4.addClass('header__section4--home animate__animated animate__pulse');
 
           $('.header__section4--desc').addClass('hidden');
-          $('.header__section4--desc').removeClass('visible');
+          $('.header__section4--desc').removeClass('visible animate__animated animate__fadeIn');
           
           $('.js--about').removeClass('active-nav');
           $('.js--about').addClass('inactive-nav');
