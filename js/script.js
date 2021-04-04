@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  var portfolio = $('.js--portfolio');
+  
     function sleep(milliseconds) {
         const date = Date.now();
         let currentDate = null;
@@ -34,11 +36,19 @@ $(document).ready(function(){
       function aboutCLick(){
         document.title = "Reel Films | About";
 
-        if(header4.hasClass('header__section4--home')){
+        if(header4.hasClass('header__section4--home') || header4.hasClass('header__section4--portfolio')){
 
           header4.removeClass('header__section4--home');
           header4.addClass('header__section4--about animate__animated animate__pulse');
 
+          $('.js--about').removeClass("disp-none");
+          $('.js--films').removeClass("disp-none");
+          $('.header__section4--credentials').removeClass("disp-none");
+          $('.header__section4--portfolio-nav').addClass("disp-none");
+          $('.header__section4--portfolio-nav').removeClass("disp-flex");
+          $('.header__section4--portfolio-selection').addClass("disp-none");
+          $('.header__section4--portfolio-selection').removeClass("disp-flex");
+          
           $('.header__section4--desc').addClass('visible animate__animated animate__fadeIn');
           $('.header__section4--desc').removeClass('hidden');
 
@@ -56,9 +66,17 @@ $(document).ready(function(){
 
         document.title = "Reel Films | Home";
 
-        if(header4.hasClass('header__section4--about')){
+        if(header4.hasClass('header__section4--about') || header4.hasClass('header__section4--portfolio')){
           header4.removeClass('header__section4--about');
           header4.addClass('header__section4--home animate__animated animate__pulse');
+
+          $('.js--about').removeClass("disp-none");
+          $('.js--films').removeClass("disp-none");
+          $('.header__section4--credentials').removeClass("disp-none");
+          $('.header__section4--portfolio-nav').addClass("disp-none");
+          $('.header__section4--portfolio-nav').removeClass("disp-flex");
+          $('.header__section4--portfolio-selection').addClass("disp-none");
+          $('.header__section4--portfolio-selection').removeClass("disp-flex");
 
           $('.header__section4--desc').addClass('hidden');
           $('.header__section4--desc').removeClass('visible animate__animated animate__fadeIn');
@@ -68,6 +86,7 @@ $(document).ready(function(){
 
           $('.js--home').removeClass('inactive-side-nav');
           $('.js--home').addClass('active-side-nav');
+          $('.js--portfolio').removeClass('active-side-nav');
 
           header4.removeClass('animate__animated animate__pulse');
         }

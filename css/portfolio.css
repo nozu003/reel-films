@@ -1,0 +1,91 @@
+/* ---- parent ----*/
+
+.header__section4--portfolio {
+    background-color: #111111FF;
+}
+
+/* ---- display functions ----*/
+
+.disp-none {
+    display: none;
+}
+
+.disp-flex {
+    display: flex;
+}
+
+/* ---- nav ul li div ----*/
+
+.header__section4 nav ul div:nth-child(1){
+    margin: 40px 90px 0 90px;
+}
+
+.header__section4 nav ul div:nth-child(2){
+    margin: 40px 10px 0 20px;
+}
+
+/* ---- portfolio nav ----*/
+
+.header__section4--portfolio-nav {
+    padding: 0 10px 0 10px;
+    border-bottom: 2px solid white;
+}
+
+.header__section4--portfolio-nav--portfol {
+    font-size: 30%;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.header__section4--portfolio-nav--back {
+    margin-left: auto;
+    font-size: 20%;
+}
+
+/* ---- portfolio selection ----*/
+
+.header__section4--portfolio-selection h6 {
+    text-align: center;
+    margin-top: 80%;
+    text-transform: uppercase;
+    font-size: 20%;
+}
+
+.header__section4--portfolio-nav--back:active,
+.header__section4--portfolio-nav--back:hover {
+    cursor: pointer;
+}
+
+.header__section4--portfolio-selection--films,
+.header__section4--portfolio-selection--gallery {
+    width: 35%;
+    height: 65vh;
+    transform: scale(.90);
+}
+
+.header__section4--portfolio-selection--films:active,
+.header__section4--portfolio-selection--films:hover,
+.header__section4--portfolio-selection--gallery:active,
+.header__section4--portfolio-selection--gallery:hover {
+    cursor: pointer;
+}
+.header__section4--portfolio-selection--films {
+    background-image: url("../img/films/vlcsnap-2021-03-26-18h33m07s744.png");
+    background-size: cover;
+}
+
+.header__section4--portfolio-selection--gallery {
+    background-image: url("../img/gallery/IMG_7270.jpg");
+    background-size: cover;
+}
+
+/* ---- extra functions ----*/
+
+.back-icon-spacing {
+    margin-left: 10px;
+    font-size: 75%;
+}
+
+.text-smol {
+    font-size: 50%;
+}
