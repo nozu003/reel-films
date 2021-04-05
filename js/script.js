@@ -65,7 +65,10 @@ $(document).ready(function(){
       }
       
       $('.js--home').click(function(){
+        homeClick();
+      });
 
+      function homeClick(){
         document.title = "Reel Films | Home";
 
         if(header4.hasClass('header__section4--about') || header4.hasClass('header__section4--portfolio') || header4.hasClass('portfolio--films-collection')){
@@ -96,5 +99,5 @@ $(document).ready(function(){
 
           header4.removeClass('animate__animated animate__pulse');
         }
-      });
+      }
 });

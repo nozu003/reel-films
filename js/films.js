@@ -35,7 +35,12 @@ $(document).ready(function(){
     }
 
     filmBack.click(function(){
-        returnPortFolio();
+        if($header.hasClass("portfolio--films-collection")){
+            returnPortFolio();
+        }   
+        else if($header.hasClass("header__section4--portfolio static-bg")){
+            homeClick();
+        }
     });
 
     function returnPortFolio(){
@@ -48,4 +53,37 @@ $(document).ready(function(){
 
         document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "PORTFOLIOS ";
     }
+
+    function homeClick(){
+        document.title = "Reel Films | Home";
+
+        if($header.hasClass('header__section4--about') || $header.hasClass('header__section4--portfolio') || $header.hasClass('portfolio--films-collection')){
+          $header.removeClass('header__section4--about');
+          $header.addClass('header__section4--home animate__animated animate__pulse');
+          $header.removeClass('header__section4--portfolio');
+          $header.removeClass("portfolio--films-collection");
+          $header.removeClass("static-bg");
+
+          $('.js--about').removeClass("disp-none");
+          $('.js--films').removeClass("disp-none");
+          $('.header__section4--credentials').removeClass("disp-none");
+          $('.header__section4--portfolio-nav').addClass("disp-none");
+          $('.header__section4--portfolio-nav').removeClass("disp-flex");
+          $('.header__section4--portfolio-selection').addClass("disp-none");
+          $('.header__section4--portfolio-selection').removeClass("disp-flex");
+
+
+          $('.header__section4--desc').addClass('hidden');
+          $('.header__section4--desc').removeClass('visible animate__animated animate__fadeIn');
+          
+          $('.js--about').removeClass('active-nav');
+          $('.js--about').addClass('inactive-nav');
+
+          $('.js--home').removeClass('inactive-side-nav');
+          $('.js--home').addClass('active-side-nav');
+          $('.js--portfolio').removeClass('active-side-nav');
+
+          $header.removeClass('animate__animated animate__pulse');
+        }
+      }
 });
