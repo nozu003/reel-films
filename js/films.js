@@ -10,6 +10,7 @@ $(document).ready(function(){
         });
         
     function filmCollections() {
+        $(".js--portfolio").addClass("active-side-nav");
         $header.addClass("portfolio--films-collection");
         $header.removeClass("static-bg");
         $header.removeClass("header__section4--home");
@@ -39,6 +40,7 @@ $(document).ready(function(){
 
     function returnPortFolio(){
         $header.removeClass("portfolio--films-collection");
+        $header.addClass("header__section4--portfolio");
         $header.addClass("static-bg");
 
         portSelect.removeClass("disp-none");
