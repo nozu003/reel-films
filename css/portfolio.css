@@ -7,7 +7,7 @@
 }
 
 .portfolio--films-collection {
-    background-image: url("../img/collections/COLLECTION\ PAGE\ BACKGROUND.jpg");
+    background-image: url("../webp/collections/COLLECTION\ PAGE\ BACKGROUND-min.webp");
     background-size: cover;
     max-width: 100%;
 }
@@ -95,12 +95,12 @@
     
 }
 .header__section4--portfolio-selection--films {
-    background-image: url("../img/films/vlcsnap-2021-03-26-18h33m07s744.png");
+    background-image: url("../webp/films/vlcsnap-2021-03-26-18h33m07s744-min.webp");
     background-size: cover;
 }
 
 .header__section4--portfolio-selection--gallery {
-    background-image: url("../img/gallery/IMG_7270.jpg");
+    background-image: url("../webp/gallery/IMG_7270-min.webp");
     background-size: cover;
 }
 

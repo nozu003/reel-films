@@ -128,11 +128,11 @@
 }
 
 .header__section4--home {
-    background-image: url("../css/img/hero.jpg");
+    background-image: url("../css/webp/hero-min.webp");
 }
 
 .header__section4--about {
-    background-image: url("../img/about/about.jpg");
+    background-image: url("../webp/about/about-min.webp");
 }
 
 .header__section4--desc {
