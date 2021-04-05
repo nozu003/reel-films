@@ -68,7 +68,7 @@ $(document).ready(function(){
 
         document.title = "Reel Films | Home";
 
-        if(header4.hasClass('header__section4--about') || header4.hasClass('header__section4--portfolio')){
+        if(header4.hasClass('header__section4--about') || header4.hasClass('header__section4--portfolio') || header4.hasClass('portfolio--films-collection')){
           header4.removeClass('header__section4--about');
           header4.addClass('header__section4--home animate__animated animate__pulse');
           header4.removeClass('header__section4--portfolio');

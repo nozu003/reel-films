@@ -27,6 +27,8 @@ $(document).ready(function(){
             $('.header__section4--desc').removeClass('visible animate__animated animate__fadeIn');
 
             $('.js--home').addClass('inactive-side-nav');
+            $('.js--home').removeClass('active-side-nav');
+            
             $('.js--portfolio').addClass('active-side-nav');
 
             document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "PORTFOLIOS ";
