@@ -1,5 +1,5 @@
 .portfolio--films-display {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),url("../webp/films/vlcsnap-2021-03-26-18h30m05s130-min.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)),url("../webp/films/vlcsnap-2021-03-26-18h30m05s130-min.webp");
     background-size: cover;
     max-width: 100%;
 }
@@ -81,3 +81,9 @@
     font-weight: bold;
 }
 
+.film-title-player {
+    font-size: 45%;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
