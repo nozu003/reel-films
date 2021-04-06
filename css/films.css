@@ -29,9 +29,9 @@
   
 .selection-photo {
     width: 100%;
-    height: auto;
+    height: 100%;
     overflow: hidden;
-    transform: scale(1.30);
+    transform: scale(1.45);
 }
 
 /* width */
@@ -66,15 +66,18 @@
 .selection-photo img:hover {
     opacity: 1;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .film--title,
 .film--desc {
-    font-size: 40%;
+    font-size: 23%;
     line-height: normal;
     letter-spacing: 3px;
 }
 
 .film--title {
+    margin-top: 5px;
     font-weight: bold;
 }
+
