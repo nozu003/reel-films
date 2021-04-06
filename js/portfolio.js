@@ -45,6 +45,8 @@ $(document).ready(function(){
             $(".header__section4--portfolio-nav--back").addClass("js--films-back");
             $(".i-back").removeClass("js--films-collection");
             $(".i-back").addClass("js--films-back");
+
+            $(".header__section4--collection-display").addClass("disp-none");
         }
 
         

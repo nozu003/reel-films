@@ -85,6 +85,8 @@ $(document).ready(function(){
         $(".header__section4--portfolio-nav--back").addClass("js--films-back");
         $(".i-back").removeClass("js--films-collection");
         $(".i-back").addClass("js--films-back");
+
+        $(".header__section4--collection-display").removeClass("disp-none");
     }
 
     filmBack.click(function(){
@@ -115,6 +117,7 @@ $(document).ready(function(){
         portSelect.addClass("disp-flex");
 
         $('.header__section4--film-present').addClass("disp-none");
+        $(".header__section4--collection-display").addClass("disp-none");
 
         document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "PORTFOLIOS ";
     }
@@ -150,6 +153,7 @@ $(document).ready(function(){
           $('.js--portfolio').removeClass('active-side-nav');
 
           $header.removeClass('animate__animated animate__pulse');
+          $(".header__section4--collection-display").addClass("disp-none");
         }
       }
 });

@@ -53,6 +53,7 @@ $(document).ready(function(){
           $('.js--home').addClass('inactive-side-nav');
           $('.js--home').removeClass('active-side-nav');
           
+          $(".header__section4--collection-display").addClass("disp-none");
         }
       }
       
@@ -91,6 +92,8 @@ $(document).ready(function(){
           $('.js--portfolio').removeClass('active-side-nav');
 
           header4.removeClass('animate__animated animate__pulse');
+
+          $(".header__section4--collection-display").addClass("disp-none");
         }
       }
 });
