@@ -89,6 +89,8 @@ $(document).ready(function(){
         $(".i-back").addClass("js--films-back");
 
         $(".header__section4--collection-display").removeClass("disp-none");
+
+        document.getElementById('background').style.backgroundImage = '';
     }
 
     filmBack.click(function(){
@@ -122,6 +124,7 @@ $(document).ready(function(){
         $(".header__section4--collection-display").addClass("disp-none");
 
         document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "PORTFOLIOS ";
+        document.getElementById('background').style.backgroundImage = '';
     }
 
     function homeClick(){
@@ -156,6 +159,8 @@ $(document).ready(function(){
 
           $header.removeClass('animate__animated animate__pulse');
           $(".header__section4--collection-display").addClass("disp-none");
+
+          document.getElementById('background').style.backgroundImage = '';
         }
       }
 

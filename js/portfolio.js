@@ -47,6 +47,8 @@ $(document).ready(function(){
             $(".i-back").addClass("js--films-back");
 
             $(".header__section4--collection-display").addClass("disp-none");
+
+            document.getElementById('background').style.backgroundImage = '';
         }
 
         

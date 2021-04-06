@@ -54,6 +54,8 @@ $(document).ready(function(){
           $('.js--home').removeClass('active-side-nav');
           
           $(".header__section4--collection-display").addClass("disp-none");
+
+          document.getElementById('background').style.backgroundImage = '';
         }
       }
       
@@ -94,6 +96,8 @@ $(document).ready(function(){
           header4.removeClass('animate__animated animate__pulse');
 
           $(".header__section4--collection-display").addClass("disp-none");
+
+          document.getElementById('background').style.backgroundImage = '';
         }
       }
 });
