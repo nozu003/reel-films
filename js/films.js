@@ -79,12 +79,12 @@ $(document).ready(function(){
         document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "FILMS / COLLECTIONS";
 
         document.querySelector('.header__section4--portfolio-nav--back').innerHTML = "back";
-            $('.back-icon-spacing').addClass("ion-ios-arrow-round-back");
-            $('.back-icon-spacing').removeClass("ion-md-albums");
-            $(".header__section4--portfolio-nav--back").removeClass("js--films-collections");
-            $(".header__section4--portfolio-nav--back").addClass("js--films-back");
-            $(".i-back").removeClass("js--films-collection");
-            $(".i-back").addClass("js--films-back");
+        $('.back-icon-spacing').addClass("ion-ios-arrow-round-back");
+        $('.back-icon-spacing').removeClass("ion-md-albums");
+        $(".header__section4--portfolio-nav--back").removeClass("js--films-collections");
+        $(".header__section4--portfolio-nav--back").addClass("js--films-back");
+        $(".i-back").removeClass("js--films-collection");
+        $(".i-back").addClass("js--films-back");
     }
 
     filmBack.click(function(){
