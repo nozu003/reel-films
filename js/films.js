@@ -13,6 +13,9 @@ $(document).ready(function(){
         function filmPresent(){
             document.title = "Reel Films | Films";
 
+            $header.removeClass('header__section4--about animate__animated animate__pulse');
+            $header.removeClass('portfolio--films-collection');
+
             $('.header__section4--portfolio-selection').addClass("disp-none");
             $('.header__section4--portfolio-selection').removeClass("disp-flex");
 
@@ -55,6 +58,7 @@ $(document).ready(function(){
         $header.removeClass("static-bg");
         $header.removeClass("header__section4--home");
         $header.removeClass("header__section4--about");
+        $header.removeClass("portfolio--films-display");
 
         $('.js--about').addClass("disp-none");
         $('.js--films').addClass("disp-none");
@@ -88,7 +92,11 @@ $(document).ready(function(){
             
             if($(".header__section4--portfolio-nav--back").hasClass("js--films-collections")){
                 filmCollections();
-            }else{
+            }
+            else if($(".header__section4--film-present").hasClass("disp-none")){
+                filmPresent();
+            }
+            else{
                 returnPortFolio();
             }
         }   

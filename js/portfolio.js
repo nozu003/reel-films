@@ -11,8 +11,10 @@ $(document).ready(function(){
 
         document.title = "Reel Films | Portfolios";
 
-        if($header.hasClass("header__section4--home") || $header.hasClass("header__section4--about")){
+        if($header.hasClass("header__section4--home") || $header.hasClass("header__section4--about") || $header.hasClass("portfolio--films-display")){
+
             $header.removeClass("header__section4--home header__section4--about animate__animated animate__pulse animate__slow");
+            $(".header__section4--film-present").addClass("disp-none");
             $header.addClass("header__section4--portfolio static-bg");
             $header.removeClass("portfolio--films-collection");
             $header.removeClass("portfolio--films-display");
@@ -35,6 +37,14 @@ $(document).ready(function(){
             $('.js--portfolio').addClass('active-side-nav');
 
             document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "PORTFOLIOS ";
+
+            document.querySelector('.header__section4--portfolio-nav--back').innerHTML = "back";
+            $('.back-icon-spacing').addClass("ion-ios-arrow-round-back");
+            $('.back-icon-spacing').removeClass("ion-md-albums");
+            $(".header__section4--portfolio-nav--back").removeClass("js--films-collections");
+            $(".header__section4--portfolio-nav--back").addClass("js--films-back");
+            $(".i-back").removeClass("js--films-collection");
+            $(".i-back").addClass("js--films-back");
         }
 
         

@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  var header4 = $('.header__section4');
   var portfolio = $('.js--portfolio');
   
     function sleep(milliseconds) {
@@ -10,21 +11,11 @@ $(document).ready(function(){
         } while (currentDate - date < milliseconds);
       }
 
+      H4AnimationRemover();
+
       function H4AnimationRemover(){
         sleep(2000);
         header4.removeClass('animate__animated animate__pulse animate__slow');  
-      }
-
-      function H4AnimChecker(){
-        const animChecker = document.querySelector('.animate__pulse');
-
-          animChecker.addEventListener('animationend', H4AnimationRemover());
-      }
-      
-      var header4 = $('.header__section4');
-
-      if(document.readyState === 'ready' || document.readyState === 'complete'){
-          H4AnimChecker();
       }
       
       $('.js--about').click(function(){
