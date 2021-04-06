@@ -195,6 +195,7 @@ $(document).ready(function(){
 
         document.getElementById('background').style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),url('+imageBackground[3]+')';
 
+        filmPresent();
       });
     
 });
