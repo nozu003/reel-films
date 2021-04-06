@@ -7,7 +7,10 @@ $(document).ready(function(){
 
         /* films */
         portFilms.click(function(){
-            // filmCollections();
+            filmPresent();
+        });
+        
+        function filmPresent(){
             document.title = "Reel Films | Films";
 
             $('.header__section4--portfolio-selection').addClass("disp-none");
@@ -41,12 +44,12 @@ $(document).ready(function(){
             $(".header__section4--portfolio-nav--back").removeClass("js--films-back");
             $(".i-back").addClass("js--films-collection");
             $(".i-back").removeClass("js--films-back");
-
-        });
+        }
         
         /* films-collections */
 
     function filmCollections() {
+        document.title = "Reel Films | Collections";
         $(".js--portfolio").addClass("active-side-nav");
         $header.addClass("portfolio--films-collection");
         $header.removeClass("static-bg");
@@ -70,18 +73,27 @@ $(document).ready(function(){
         $('.header__section4--film-present').addClass("disp-none");
 
         document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "FILMS / COLLECTIONS";
+
+        document.querySelector('.header__section4--portfolio-nav--back').innerHTML = "back";
+            $('.back-icon-spacing').addClass("ion-ios-arrow-round-back");
+            $('.back-icon-spacing').removeClass("ion-md-albums");
+            $(".header__section4--portfolio-nav--back").removeClass("js--films-collections");
+            $(".header__section4--portfolio-nav--back").addClass("js--films-back");
+            $(".i-back").removeClass("js--films-collection");
+            $(".i-back").addClass("js--films-back");
     }
 
     filmBack.click(function(){
         if($header.hasClass("portfolio--films-collection") || $header.hasClass("portfolio--films-display")){
-            returnPortFolio();
+            
+            if($(".header__section4--portfolio-nav--back").hasClass("js--films-collections")){
+                filmCollections();
+            }else{
+                returnPortFolio();
+            }
         }   
         else if($header.hasClass("header__section4--portfolio static-bg")){
             homeClick();
-        }
-        else if($(".header__section4--portfolio-nav--back").hasClass("js--films-collections")){
-            // filmCollections();
-            alert("L");
         }
     });
 
