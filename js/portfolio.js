@@ -9,10 +9,13 @@ $(document).ready(function(){
 
     function portfoltioClick(){
 
+        document.title = "Reel Films | Portfolios";
+
         if($header.hasClass("header__section4--home") || $header.hasClass("header__section4--about")){
             $header.removeClass("header__section4--home header__section4--about animate__animated animate__pulse animate__slow");
             $header.addClass("header__section4--portfolio static-bg");
             $header.removeClass("portfolio--films-collection");
+            $header.removeClass("portfolio--films-display");
             
             $('.header__section4--portfolio-nav').removeClass("disp-none");
             $('.header__section4--portfolio-selection').removeClass("disp-none");

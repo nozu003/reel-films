@@ -32,6 +32,16 @@
     margin: 40px 10px 0 20px;
 }
 
+.header__section4--portfolio-selection {
+    padding-top: 0;
+    padding-left: 50px;
+    transform: scale(1.05);
+}
+
+.header__section4 div:nth-child(3){
+    margin-top: 20px;
+}
+
 /* ---- portfolio nav ----*/
 
 .header__section4--portfolio-nav {

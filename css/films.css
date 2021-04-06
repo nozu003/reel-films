@@ -1,0 +1,14 @@
+.portfolio--films-display {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),url("../webp/films/vlcsnap-2021-03-26-18h30m05s128-min.webp");
+    background-size: cover;
+    max-width: 100%;
+}
+
+.header__section4--film-present {
+    padding-left: 17%;
+}
+
+.ion-md-albums {
+    font-size: 50%;
+}
+  

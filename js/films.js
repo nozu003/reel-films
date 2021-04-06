@@ -5,10 +5,47 @@ $(document).ready(function(){
     var portSelect = $(".header__section4--portfolio-selection");
     var filmBack = $(".js--films-back");
 
+        /* films */
         portFilms.click(function(){
-            filmCollections();
+            // filmCollections();
+            document.title = "Reel Films | Films";
+
+            $('.header__section4--portfolio-selection').addClass("disp-none");
+            $('.header__section4--portfolio-selection').removeClass("disp-flex");
+
+            $(".js--portfolio").addClass("active-side-nav");
+            $header.addClass("portfolio--films-display");
+            $header.removeClass("static-bg");
+            $header.removeClass("header__section4--home");
+            $header.removeClass("header__section4--about");
+
+            $('.js--about').addClass("disp-none");
+            $('.js--films').addClass("disp-none");
+            $('.header__section4--credentials').addClass("disp-none");
+
+            $('.header__section4--desc').addClass('hidden');
+            $('.header__section4--desc').removeClass('visible animate__animated animate__fadeIn');
+
+            $('.js--home').addClass('inactive-side-nav');
+            
+            $('.header__section4--portfolio-nav').removeClass("disp-none");
+            $('.header__section4--portfolio-nav').addClass("disp-flex");
+
+            document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "FILMS ";
+
+            $('.header__section4--film-present').removeClass("disp-none");
+            document.querySelector('.header__section4--portfolio-nav--back').innerHTML = "collections";
+            $('.back-icon-spacing').removeClass("ion-ios-arrow-round-back");
+            $('.back-icon-spacing').addClass("ion-md-albums");
+            $(".header__section4--portfolio-nav--back").addClass("js--films-collections");
+            $(".header__section4--portfolio-nav--back").removeClass("js--films-back");
+            $(".i-back").addClass("js--films-collection");
+            $(".i-back").removeClass("js--films-back");
+
         });
         
+        /* films-collections */
+
     function filmCollections() {
         $(".js--portfolio").addClass("active-side-nav");
         $header.addClass("portfolio--films-collection");
@@ -30,26 +67,34 @@ $(document).ready(function(){
 
         portSelect.addClass("disp-none");
         portSelect.removeClass("disp-flex");
-        
+        $('.header__section4--film-present').addClass("disp-none");
+
         document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "FILMS / COLLECTIONS";
     }
 
     filmBack.click(function(){
-        if($header.hasClass("portfolio--films-collection")){
+        if($header.hasClass("portfolio--films-collection") || $header.hasClass("portfolio--films-display")){
             returnPortFolio();
         }   
         else if($header.hasClass("header__section4--portfolio static-bg")){
             homeClick();
         }
+        else if($(".header__section4--portfolio-nav--back").hasClass("js--films-collections")){
+            // filmCollections();
+            alert("L");
+        }
     });
 
     function returnPortFolio(){
+        $header.removeClass("portfolio--films-display");
         $header.removeClass("portfolio--films-collection");
         $header.addClass("header__section4--portfolio");
         $header.addClass("static-bg");
 
         portSelect.removeClass("disp-none");
         portSelect.addClass("disp-flex");
+
+        $('.header__section4--film-present').addClass("disp-none");
 
         document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "PORTFOLIOS ";
     }
@@ -62,6 +107,7 @@ $(document).ready(function(){
           $header.addClass('header__section4--home animate__animated animate__pulse');
           $header.removeClass('header__section4--portfolio');
           $header.removeClass("portfolio--films-collection");
+          $header.removeClass("portfolio--films-display");
           $header.removeClass("static-bg");
 
           $('.js--about').removeClass("disp-none");

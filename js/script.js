@@ -42,6 +42,7 @@ $(document).ready(function(){
           header4.addClass('header__section4--about animate__animated animate__pulse');
           header4.removeClass('header__section4--portfolio');
           header4.removeClass("portfolio--films-collection");
+          header4.removeClass("portfolio--films-display");
           header4.removeClass("static-bg");
 
           $('.js--about').removeClass("disp-none");
@@ -71,11 +72,12 @@ $(document).ready(function(){
       function homeClick(){
         document.title = "Reel Films | Home";
 
-        if(header4.hasClass('header__section4--about') || header4.hasClass('header__section4--portfolio') || header4.hasClass('portfolio--films-collection')){
+        if(header4.hasClass('header__section4--about') || header4.hasClass('header__section4--portfolio') || header4.hasClass('portfolio--films-collection') || header4.hasClass("portfolio--films-display")){
           header4.removeClass('header__section4--about');
           header4.addClass('header__section4--home animate__animated animate__pulse');
           header4.removeClass('header__section4--portfolio');
           header4.removeClass("portfolio--films-collection");
+          header4.removeClass("portfolio--films-display");
           header4.removeClass("static-bg");
 
           $('.js--about').removeClass("disp-none");
@@ -85,7 +87,7 @@ $(document).ready(function(){
           $('.header__section4--portfolio-nav').removeClass("disp-flex");
           $('.header__section4--portfolio-selection').addClass("disp-none");
           $('.header__section4--portfolio-selection').removeClass("disp-flex");
-
+          $('.header__section4--film-present').addClass("disp-none");
 
           $('.header__section4--desc').addClass('hidden');
           $('.header__section4--desc').removeClass('visible animate__animated animate__fadeIn');
