@@ -232,5 +232,9 @@ $(document).ready(function(){
 
       var btnLeft = $(".select-l");
       var btnRight = $(".select-r");
+
+      btnRight.click(function(){
+        
+      });
     
 });
