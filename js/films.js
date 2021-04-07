@@ -229,5 +229,8 @@ $(document).ready(function(){
 
         filmPresent();
       });
+
+      var btnLeft = $(".select-l");
+      var btnRight = $(".select-r");
     
 });
