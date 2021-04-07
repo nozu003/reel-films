@@ -54,6 +54,8 @@ $(document).ready(function(){
             document.getElementById("videoPlayer").src = "https://www.youtube-nocookie.com/embed/zkbUvTHETds?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&disablekb=1";
 
             document.querySelector('.film-title-player').innerHTML = "INTRA &mdash; SANTIAGO";
+
+            $(".header__section4--gallery-display").addClass("disp-none")
         }
 
         

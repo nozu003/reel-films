@@ -1,0 +1,49 @@
+.portfolio--gallery-display {
+    background-color: #111111FF;
+}
+
+.test {
+    width: 95%;
+    height: 450px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.test2 {
+    list-style: none;
+    display: flex;
+    padding-right: 35px;
+}
+
+.test2 li {
+    width: 18%;
+    padding: 0 5px 0 0;
+}
+  
+.test3 {
+    width: 100%;
+    height: 60%;
+    transform: scale(1.60);
+    margin-bottom: 30px;
+}
+
+.test3 img {
+    width: 100%;
+    transition: opacity .2s;
+}
+
+.test3 img:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.test4 {
+    width: 100%;
+    list-style: none;
+    display: block;
+}
+
+.test4 li {
+    width: 18%;
+    padding: 0 5px 0 0;
+}

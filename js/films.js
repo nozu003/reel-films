@@ -97,12 +97,12 @@ $(document).ready(function(){
     }
 
     filmBack.click(function(){
-        if($header.hasClass("portfolio--films-collection") || $header.hasClass("portfolio--films-display")){
+        if($header.hasClass("portfolio--films-collection") || $header.hasClass("portfolio--films-display") || $header.hasClass("portfolio--gallery-display")){
             
             if($(".header__section4--portfolio-nav--back").hasClass("js--films-collections")){
                 filmCollections();
             }
-            else if($(".header__section4--film-present").hasClass("disp-none")){
+            else if($(".header__section4--film-present").hasClass("disp-none") && document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML == "FILMS / COLLECTIONS"){
                 if(document.querySelector('.film-title-player').innerHTML == "LARUAN"){
                     document.getElementById('background').style.backgroundImage = 'url('+imageBackground[0]+')';
                 }
@@ -117,6 +117,9 @@ $(document).ready(function(){
                 }
                 filmPresent();
             }
+            else if($(".header__section4--portfolio-nav--back").hasClass("js--films-back") && document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML == "GALLERY"){
+                returnPortFolio
+            }
             else{
                 returnPortFolio();
             }
@@ -128,6 +131,7 @@ $(document).ready(function(){
 
     function returnPortFolio(){
         $header.removeClass("portfolio--films-display");
+        $header.removeClass("portfolio--gallery-display");
         $header.removeClass("portfolio--films-collection");
         $header.addClass("header__section4--portfolio");
         $header.addClass("static-bg");
@@ -141,6 +145,8 @@ $(document).ready(function(){
 
         document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "PORTFOLIOS ";
         document.getElementById('background').style.backgroundImage = '';
+
+        $(".header__section4--gallery-display").addClass("disp-none")
         
     }
 
@@ -179,6 +185,8 @@ $(document).ready(function(){
           $(".selection-photo-lr").addClass("disp-none");
 
           document.getElementById('background').style.backgroundImage = '';
+
+          $(".header__section4--gallery-display").addClass("disp-none")
 
         }
       }
@@ -230,11 +238,11 @@ $(document).ready(function(){
         filmPresent();
       });
 
-      var btnLeft = $(".select-l");
-      var btnRight = $(".select-r");
+      var btnClick = $(".select-l, .select-r");
 
-      btnRight.click(function(){
-        
+      btnClick.click(function(){
+        alert("This is a button.")
       });
+
     
 });
