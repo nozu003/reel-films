@@ -54,8 +54,13 @@ $(document).ready(function(){
           $('.js--home').removeClass('active-side-nav');
           
           $(".header__section4--collection-display").addClass("disp-none");
+          $(".selection-photo-lr").addClass("disp-none");
 
           document.getElementById('background').style.backgroundImage = '';
+
+          document.getElementById("videoPlayer").src = "https://www.youtube-nocookie.com/embed/zkbUvTHETds?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&disablekb=1";
+
+          document.querySelector('.film-title-player').innerHTML = "INTRA &mdash; SANTIAGO";
         }
       }
       
@@ -96,8 +101,13 @@ $(document).ready(function(){
           header4.removeClass('animate__animated animate__pulse');
 
           $(".header__section4--collection-display").addClass("disp-none");
+          $(".selection-photo-lr").addClass("disp-none");
 
           document.getElementById('background').style.backgroundImage = '';
+
+          document.getElementById("videoPlayer").src = "https://www.youtube-nocookie.com/embed/zkbUvTHETds?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&disablekb=1";
+
+          document.querySelector('.film-title-player').innerHTML = "INTRA &mdash; SANTIAGO";
         }
       }
 });

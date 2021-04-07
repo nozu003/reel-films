@@ -5,7 +5,8 @@
 }
 
 .header__section4--film-present {
-    padding-left: 17%;
+    width: 100%;
+    padding-left: 22%;
 }
 
 .ion-md-albums {
@@ -34,8 +35,8 @@
     transform: scale(1.45);
 }
 
-/* width */
-::-webkit-scrollbar {
+    /* width */
+    ::-webkit-scrollbar {
     width: 3px;
   }
   
@@ -79,6 +80,7 @@
 .film--title {
     margin-top: 5px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .film-title-player {
@@ -86,4 +88,58 @@
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
+    position: absolute;
+    margin-top: -1.2%;
 }
+
+.selection-photo-lr {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.present--display-selection {
+    list-style: none;
+}
+
+.present-display-selection li {
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+    top: 65%;
+    left: 21.8%;
+}
+
+.present-display-selection li:nth-child(1) {
+    margin-left: 12%;
+}
+
+.present-display-selection li:nth-child(2) {
+    margin-left: 30%;
+}
+
+.present-display-selection li:nth-child(3) {
+    margin-left: 48%;
+}
+
+.present-selection {
+    background-color: black;
+    height: 110px;
+}
+.present-selection img {
+    width: 100%;
+    opacity: .7;
+    transition: opacity .2s;
+}
+
+.present-selection img:hover {
+    opacity: 1;
+}
+
+.present-select-btn,
+.collection-select-btn {
+    position: absolute;
+    left: 46%;
+    top: 21%;
+    font-size: 90%;
+}
+

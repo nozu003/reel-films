@@ -49,6 +49,7 @@ $(document).ready(function(){
             $(".i-back").removeClass("js--films-back");
 
             $(".header__section4--collection-display").addClass("disp-none");
+            $(".selection-photo-lr").removeClass("disp-none");
         }
         
         /* films-collections */
@@ -89,6 +90,7 @@ $(document).ready(function(){
         $(".i-back").addClass("js--films-back");
 
         $(".header__section4--collection-display").removeClass("disp-none");
+        $(".selection-photo-lr").addClass("disp-none");
 
         document.getElementById('background').style.backgroundImage = '';
     }
@@ -122,6 +124,7 @@ $(document).ready(function(){
 
         $('.header__section4--film-present').addClass("disp-none");
         $(".header__section4--collection-display").addClass("disp-none");
+        $(".selection-photo-lr").addClass("disp-none");
 
         document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "PORTFOLIOS ";
         document.getElementById('background').style.backgroundImage = '';
@@ -159,8 +162,10 @@ $(document).ready(function(){
 
           $header.removeClass('animate__animated animate__pulse');
           $(".header__section4--collection-display").addClass("disp-none");
+          $(".selection-photo-lr").addClass("disp-none");
 
           document.getElementById('background').style.backgroundImage = '';
+
         }
       }
 
@@ -176,6 +181,8 @@ $(document).ready(function(){
 
         document.getElementById('background').style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)),url('+imageBackground[0]+')';
 
+        document.querySelector('.film-title-player').innerHTML = "LARUAN";
+
         filmPresent();
       });
 
@@ -183,6 +190,8 @@ $(document).ready(function(){
         document.getElementById("videoPlayer").src = "https://www.youtube-nocookie.com/embed/CoBoAi_tAdA?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&disablekb=1";
 
         document.getElementById('background').style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)),url('+imageBackground[1]+')';
+
+        document.querySelector('.film-title-player').innerHTML = "PROJECT: DAY OFF";
 
         filmPresent();
       });
@@ -192,6 +201,8 @@ $(document).ready(function(){
         
         document.getElementById('background').style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)),url('+imageBackground[2]+')';
 
+        document.querySelector('.film-title-player').innerHTML = "LARAWAN";
+
         filmPresent();
       });
 
@@ -199,6 +210,8 @@ $(document).ready(function(){
         document.getElementById("videoPlayer").src = "https://www.youtube-nocookie.com/embed/zkbUvTHETds?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&disablekb=1";
 
         document.getElementById('background').style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)),url('+imageBackground[3]+')';
+
+        document.querySelector('.film-title-player').innerHTML = "INTRA &mdash; SANTIAGO";
 
         filmPresent();
       });
