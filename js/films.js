@@ -174,7 +174,7 @@ $(document).ready(function(){
       var film3 = $(".film--3");
       var film4 = $(".film--4");
 
-      var imageBackground = ['../webp/films/vlcsnap-2021-03-26-18h30m05s129-min.webp', './webp/films/vlcsnap-2021-03-26-18h30m05s128-min.webp', '../webp/films/vlcsnap-2021-03-26-18h30m05s128sss-min.webp', '../webp/films/vlcsnap-2021-03-26-18h30m05s130-min.webp']
+      var imageBackground = ['./webp/films/vlcsnap-2021-03-26-18h30m05s129-min.webp', './webp/films/vlcsnap-2021-03-26-18h30m05s128-min.webp', './webp/films/vlcsnap-2021-03-26-18h30m05s128sss-min.webp', './webp/films/vlcsnap-2021-03-26-18h30m05s130-min.webp']
 
       film1.click(function(){
         document.getElementById("videoPlayer").src = "https://www.youtube-nocookie.com/embed/DRrg1gC0fhM?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&disablekb=1";
