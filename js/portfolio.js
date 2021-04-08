@@ -58,7 +58,18 @@ $(document).ready(function(){
             $(".header__section4--gallery-display").addClass("disp-none")
             
             $(".header__section4--photo-display").addClass("disp-none");
+
+            $header.addClass("animate__animated animate__fadeIn animate__slow");
+            setTimeout(function(){
+                removeFadeIn();
+            }
+            ,1500
+            );
         }
+    }
+
+    function removeFadeIn(){
+        $header.removeClass("animate__animated animate__fadeIn animate__slow");
     }
 
 });

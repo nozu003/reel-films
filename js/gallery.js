@@ -26,6 +26,31 @@ $(document).ready(function(){
         $header.removeClass("static-bg");
 
         $(".header__section4--photo-display").addClass("disp-none");
+
+        $header.addClass("animate__animated animate__fadeIn animate__slow");
+            setTimeout(function(){
+                removeFadeIn();
+            }
+            ,1500
+            );
+    }
+
+    function galleryCollection2(){
+        document.title = "Reel Films | Gallery";
+
+        $header.removeClass('header__section4--about animate__animated animate__pulse');
+        $(".header__section4--gallery-display").removeClass("disp-none")
+
+        $('.header__section4--portfolio-selection').addClass("disp-none");
+        $('.header__section4--portfolio-selection').removeClass("disp-flex");
+
+        document.querySelector('.header__section4--portfolio-nav--portfol').innerHTML = "GALLERY ";
+
+        $header.addClass("portfolio--gallery-display");
+        $header.removeClass("static-bg");
+
+        $(".header__section4--photo-display").addClass("disp-none");
+
     }
 
     $(photoSelect[0]).click(function(){
@@ -71,7 +96,7 @@ $(document).ready(function(){
     });
 
     $(".photo-display").click(function(){
-        galleryCollection();
+        galleryCollection2();
     });
 
     function photoPortrait() {
@@ -93,5 +118,9 @@ $(document).ready(function(){
         document.getElementById("displayPhoto").style.transform = "translateY(21.5%)";
         document.getElementById("displayPhoto").style.left = "19%";
         document.getElementById("displayPhoto").style.width = "55%";
+        }
+
+        function removeFadeIn(){
+            $header.removeClass("animate__animated animate__fadeIn animate__slow");
         }
 });

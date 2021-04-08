@@ -51,7 +51,11 @@ $(document).ready(function(){
             $(".header__section4--collection-display").addClass("disp-none");
             $(".selection-photo-lr").removeClass("disp-none");
             
-            removeFadeIn();
+            setTimeout(function(){
+                removeFadeIn();
+            }
+            ,1500
+            );
 
         }
         
@@ -96,7 +100,13 @@ $(document).ready(function(){
         $(".selection-photo-lr").addClass("disp-none");
 
         document.getElementById('background').style.backgroundImage = '';
-        // removeFadeIn();
+
+        $header.addClass("animate__animated animate__fadeIn animate__slow");
+            setTimeout(function(){
+                removeFadeIn();
+            }
+            ,1500
+            );
     }
 
     filmBack.click(function(){
@@ -150,6 +160,13 @@ $(document).ready(function(){
         document.getElementById('background').style.backgroundImage = '';
 
         $(".header__section4--gallery-display").addClass("disp-none")
+
+        $header.addClass("animate__animated animate__fadeIn animate__slow");
+            setTimeout(function(){
+                removeFadeIn();
+            }
+            ,1500
+            );
         
     }
 
@@ -248,7 +265,6 @@ $(document).ready(function(){
       });
 
     function removeFadeIn(){
-        sleep(2000);
         $header.removeClass("animate__animated animate__fadeIn animate__slow");
     }
 });
