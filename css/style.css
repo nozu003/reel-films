@@ -8,6 +8,9 @@
 /* GLOBAL */
 /* ---------------------------------- */
 
+body {
+    background-color: rgba(0, 0, 0, 900);
+}
 * {
     margin: 0;
     padding: 0;
@@ -29,12 +32,14 @@
 /* ---- section1 ----*/
 
 .header__section1 {
+    background-color: white;
     flex: 0 0 1%;
 }
 
 /* ---- section2 ----*/
 
 .header__section2 {
+    background-color: white;
     flex: 0 0 3%;
     display: flex;
     align-items: center;
