@@ -47,3 +47,36 @@
     width: 18%;
     padding: 0 5px 0 0;
 }
+
+.header__section4--photo-display {
+    position: absolute;
+    width: 79%;
+    overflow: hidden;
+    top: -12%;
+    height: 100vh;
+    z-index: 10;
+}
+
+.image-bg-tint,
+.photo-display {
+    position: absolute;
+    left: -8.6%;
+    top: -6%;
+    width: 107%;
+    height: 100%;
+}
+.image-bg-tint {
+    background-color: rgba(0, 0, 0, 0.750);
+    z-index: 11;
+}
+
+.photo-display {
+    z-index: 12;
+}
+
+.selected-photo img{
+    position: absolute;
+    transform: translateY(11%);
+    left: 30%;
+    width: 35%;
+}

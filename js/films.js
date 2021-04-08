@@ -196,7 +196,7 @@ $(document).ready(function(){
       var film3 = $(".film--3");
       var film4 = $(".film--4");
 
-      var imageBackground = ['./webp/blurred/blurred-bg2-min.webp', './webp/blurred/blurred-bg4-min.webp', './webp/blurred/blurred-bg3-min.webp', './webp/blurred/blurred-bg1-min.webp']
+      var imageBackground = ['./webp/blurred/blurred-bg2-min.webp', './webp/blurred/blurred-bg4-min.webp', './webp/blurred/blurred-bg3-min.webp', './webp/blurred/blurred-bg1-min.webp'];
 
       film1.click(function(){
         document.getElementById("videoPlayer").src = "https://www.youtube-nocookie.com/embed/DRrg1gC0fhM?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&disablekb=1";
