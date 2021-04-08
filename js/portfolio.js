@@ -11,8 +11,8 @@ $(document).ready(function(){
 
         document.title = "Reel Films | Portfolios";
 
-        if($header.hasClass("header__section4--home") || $header.hasClass("header__section4--about") || $header.hasClass("portfolio--films-display")){
-
+        if($header.hasClass("header__section4--home") || $header.hasClass("header__section4--about") || $header.hasClass("portfolio--films-display") || $header.hasClass("portfolio--gallery-display")){
+            
             $header.removeClass("header__section4--home header__section4--about animate__animated animate__pulse animate__slow");
             $(".header__section4--film-present").addClass("disp-none");
             $header.addClass("header__section4--portfolio static-bg");
@@ -56,9 +56,9 @@ $(document).ready(function(){
             document.querySelector('.film-title-player').innerHTML = "INTRA &mdash; SANTIAGO";
 
             $(".header__section4--gallery-display").addClass("disp-none")
+            
+            $(".header__section4--photo-display").addClass("disp-none");
         }
-
-        
     }
 
 });

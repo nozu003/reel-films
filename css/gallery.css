@@ -73,10 +73,10 @@
 .photo-display {
     z-index: 12;
 }
-
+/* 
 .selected-photo img{
     position: absolute;
-    transform: translateY(11%);
-    left: 30%;
-    width: 35%;
-}
+    transform: translateY(21.5%);
+    left: 19%;
+    width: 55%;
+} */
