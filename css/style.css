@@ -43,23 +43,69 @@ body {
 .main-panel {
     background-image: url("../css/webp/hero-min.webp");
     background-size: cover;
-    transform: scale(1.05);
+    transform: scale(1.15);
     animation: image-zoom-out 1s;
+}
+
+.main-panel-container {
+    margin-top: 7%;
+    animation: text-zoom-out 1.5s;
 }
 
 /* ---- main-panel-navigation ----*/
 
 .main-panel-navigation {
     list-style: none;
+    margin-left: 7%;
 }
 
 .main-panel-navigation li {
     display: inline-block;
 }
 
+.main-panel-navigation li:nth-child(2) {
+    margin-left: 15%;
+}
+
 .main-panel-navigation li a {
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 35px 10px 0;
+    border-bottom: 2px solid transparent;
+    font-size: 90%;
+    transition: border-bottom .2s, font-size .2s;
+}
+
+.main-panel-navigation li a:active,
+.main-panel-navigation li a:hover {
+    border-bottom: 2px solid white;
+    font-size: 100%;
+}
+
+/* ---- credentials ----*/
+
+.credentials {
+    margin-left: 30%;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.name {
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+
+.career {
+    margin-right: 30%;
+    text-align: right;
+    font-style: italic;
+    font-family: 'Raleway';
+    font-weight: 100;
 }
 
 /* ---------------------------------- */
@@ -73,8 +119,27 @@ body {
     }
 }
 
+@keyframes text-zoom-out {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+/* ---- variables ----*/
+
 .init-scale {}
 
 .def-scale {
     transform: scale(1);
 }
+
+.opac-0 {
+    opacity: 0;
+}
+
+.opac-1 {
+    opacity: 1;
+}
+
