@@ -13,30 +13,6 @@ body {
 }   
 
 /* ---------------------------------- */
-/* NAVIGATION */
-/* ---------------------------------- */
-
-.navigation {
-    flex: 25%;
-    box-shadow: 0px 0 5px black;
-    z-index: 1;
-}
-
-/* ---- side-navigation ----*/
-
-.side-navigation {
-    list-style: none;
-    margin-top: 120%;
-    margin-left: -10%;
-}
-
-.side-navigation li a {
-    text-decoration: none;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);  
-}
-
-/* ---------------------------------- */
 /* MAIN PANEL */
 /* ---------------------------------- */
 
@@ -129,7 +105,7 @@ body {
 }
 /* ---- variables ----*/
 
-.init-scale {}
+.init-scale {content: "";}
 
 .def-scale {
     transform: scale(1);
