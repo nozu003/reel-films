@@ -121,7 +121,8 @@ body {
 }
 
 .font-shift {
-    font-size: 150%;
+    position: absolute;
+    font-size: 200%;
     margin-left: 10px;
 }
 
