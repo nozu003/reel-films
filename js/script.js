@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
     var mPanel = $(".main-panel");
-    var mPanelCont = $(".main-panel-container")
+    var mPanelCont = $(".main-panel-container");
+    var films = $(".js--films");
+    var gallery = $(".js--gallery");
 
     if(mPanel.hasClass("init-scale")){
         setTimeout(function(){
@@ -32,6 +34,13 @@ $(document).ready(function(){
         , 1000
         );
         $(".about-description").removeClass("opac-0");
+    }
+
+    if(document.title == "Reel Films | Portfolio"){
+        
+        films.click(function(){
+            location.href = "/films.html";
+        });
     }
     
 });
