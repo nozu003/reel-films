@@ -69,8 +69,29 @@ body {
     text-decoration: none;
     font-weight: bold;
     writing-mode: vertical-lr;
-    transform: rotate(180deg);  
+    transform: rotate(180deg);
 }
+
+.side-navigation li a span {
+    position: absolute;
+    font-size: 225%;
+    left: -35%;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.side-hover {
+    transition: .2s;
+}
+
+.side-hover:active,
+.side-hover:hover,
+.active {
+    opacity: 1;
+}
+
 
 /* .side-navigation li a:active,
 .side-navigation li a:hover {
@@ -83,4 +104,45 @@ body {
     margin-left: 5%;
     height: 25%;
     font-family: 'Raleway';
+}
+
+/* ---- title ----*/
+
+.title-text {
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.title-back {
+    margin-left: auto;
+}
+
+.font-shift {
+    font-size: 150%;
+    margin-left: 10px;
+}
+
+/* ---------------------------------- */
+/* MAIN PANEL */
+/* ---------------------------------- */
+
+.main-panel-title {
+    margin-top: 5%;
+}
+
+.main-panel-title ul {
+    list-style: none;
+    margin: 0 7% 0 7%;
+    border-bottom: 2px solid white;
+}
+
+.main-panel-title li {
+    padding: 0 2.5% 0 2.5%;
+}
+.main-panel-title li a {
+    color: white;
+    text-decoration: none;
 }

@@ -10,15 +10,28 @@ $(document).ready(function(){
         }
         , 1000
         );
-        setTimeout(function(){
-            $(".main-panel-navigation").addClass("animate__animated animate__fadeIn animate__slow");
-            $(".credentials").addClass("animate__animated animate__fadeIn animate__slow");
-            $(".main-panel-navigation").addClass("opac-1");
-            $(".credentials").addClass("opac-1");
-            $(".main-panel-navigation").removeClass("opac-0");
-            $(".credentials").removeClass("opac-0");
+        if(document.title == "Reel Films | Home"){
+            setTimeout(function(){
+                $(".main-panel-navigation").addClass("animate__animated animate__fadeIn animate__slow");
+                $(".credentials").addClass("animate__animated animate__fadeIn animate__slow");
+                $(".main-panel-navigation").addClass("opac-1");
+                $(".credentials").addClass("opac-1");
+                $(".main-panel-navigation").removeClass("opac-0");
+                $(".credentials").removeClass("opac-0");
+            }
+            , 500
+            );
         }
-        , 500
-        );
+        
     }
+
+    if(document.title == "Reel Films | About"){
+        setTimeout(function(){
+            $(".backgroundIMG").addClass("def-scale");
+        }
+        , 1000
+        );
+        $(".about-description").removeClass("opac-0");
+    }
+    
 });

@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="vendor/css/ionicons.min.css">
     <link rel="stylesheet" href="vendor/css/animate.css">
     <link rel="stylesheet" href="css/side-navigation.css">
+    <link rel="stylesheet" href="css/about.css">
     <title>Reel Films | About</title>
 </head>
-<body>
+<body class="overflow-hidden">
     <header class="container-fluid p-0 d-flex overflow-hidden vh100">
         <div class="container-fluid p-0 bg-white navigation">
             <div class="container-fluid d-flex justify-content-end">
@@ -29,25 +30,53 @@
                 </ul>
             </div>
             <ul class="side-navigation">
-                <li>
-                    <a href="https://nozu003.github.io/reel-films/">home</a>
+                <li class="side-hover">
+                    <a href="/index.html"><center><span class="hide side-hover">&bullet;</span></center><br>home</a>
                 </li>
-                <li>
-                    <a href="#">portfolio</a>
+                <li class="side-hover">
+                    <a href="/portfolio.html"><center><span class="hide side-hover">&bullet;</span></center><br>portfolio</a>
                 </li>
             </ul>
             <div class="container-fluid d-flex align-items-end p-0 established">
                 <h6 class="">est. 2021</h6>
             </div>
         </div>
-        <div class="container-fluid p-0 main-panel init-scale">
-            <div class="container-fluid p-0 d-flex main-panel-container">
-                
+
+        <!-- MAIN PANEL -->
+        
+        <div class="container-fluid p-0 main-panel">
+            <div class="overflow-hidden">
+                <div class="container-fluid p-0 d-flex main-panel-container">
+                <div class="container-fluid">
+                    <ul class="main-panel-navigation">
+                        <li>
+                            <a href="/about.html" class="active">about me</a>
+                        </li>
+                        <li>
+                            <a href="#">films</a>
+                        </li>
+                    </ul>
+                    <div class="container about-description opac-0">
+                        <h4>about me</h4>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h5>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="credentials">
+                        <h1 class="name">Carl Ivan<br>Rodriguez</h1>
+                        <h6 class="career">photographer</h6>
+                        <h6 class="career">filmmaker</h6>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid p-0">
+                <div class="backgroundIMG vh100"></div>
             </div>
         </div>
     </header>
     
     <script src="vendor/js/jquery-3.6.0.min.js"></script>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
