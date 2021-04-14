@@ -39,7 +39,7 @@ $(document).ready(function(){
     if(document.title == "Reel Films | Portfolio"){
         
         films.click(function(){
-            location.href = "/films.html";
+            location.href = "https://nozu003.github.io/reel-films/films";
         });
     }
     
