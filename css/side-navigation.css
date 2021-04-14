@@ -121,11 +121,19 @@ body {
     margin-right: 3%;
 }
 
-.font-shift {
+.font-shift,
+.font-shift-collection {
     position: absolute;
     margin-top: -1%;
-    font-size: 200%;
     margin-left: 10px;
+}
+
+.font-shift {
+    font-size: 200%;
+}
+
+.font-shift-collection {
+    font-size: 175%;
 }
 
 /* ---------------------------------- */
