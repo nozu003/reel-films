@@ -4,10 +4,112 @@
 /* ---------------------------------- */
 
 .main-panel {
-    background-image: url("../webp/collections/COLLECTION\ PAGE\ BACKGROUND-min.webp");
+    background-image: url("../webp/blurred/blurred-bg1-min.webp");
     background-size: cover;
 }
 
+/* ---------------------------------- */
+/* FILM PRESENT */
+/* ---------------------------------- */
+
 .film-present {
     margin-top: 2%;
+}
+
+.film-title {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* ---------------------------------- */
+/* SELECTION */
+/* ---------------------------------- */
+
+/* ---- main parent ----*/
+
+.film-selection {
+    margin-top: -1%;
+    height: 20%;
+}
+.btn-left,
+.btn-right {
+    flex: 0 0 18%;
+    color: white;
+    font-size: 300%;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    cursor: pointer;
+}
+.btn-left {
+    padding-right: 3.33%;
+}
+
+.btn-right {
+    padding-left: 3.33%;
+}
+
+/* ---- selection parent ----*/
+
+.selection {
+    flex: 0 0 64%;
+}
+
+/* ---- child ----*/
+
+.selection--1,
+.selection--2,
+.selection--3 {
+    padding: 1% 1% 0 1%;
+    flex: 0 0 33.33%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    opacity: .7;
+    transition: opacity .2s;
+}
+
+.selection--1:hover,
+.selection--2:hover,
+.selection--3:hover,
+.selection--1:hover #play-hide,
+.selection--2:hover #play-hide,
+.selection--3:hover #play-hide {
+    cursor: pointer;
+    display: block;
+    opacity: 1;
+}
+
+.selection--1 img,
+.selection--2 img,
+.selection--3 img {
+    width: 100%;
+}
+
+.selection--1 {
+    margin-left: -3%;
+}
+.selection--2 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.selection-play {
+    color: white;
+    font-size: 225%;
+}
+
+.play-btn-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#play-hide {
+    display: none;
+    opacity: 0;
+    transition: opacity .2s;
 }
