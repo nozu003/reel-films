@@ -1,0 +1,128 @@
+
+/* ---------------------------------- */
+/* MAIN PANEL */
+/* ---------------------------------- */
+
+.main-panel {
+    background-image: url("../webp/collections/COLLECTION\ PAGE\ BACKGROUND-min.webp");
+    background-size: cover;
+}
+
+/* ---- main parent ----*/
+
+.collection-container{
+    margin: 0 7% 0 7%;
+}
+
+.collection-container {
+    margin-top: 2%;
+    height: 75vh;
+    overflow-y: scroll;
+}
+/* ---- child ----*/
+
+.inner-container {
+    height: 150%;
+}
+
+/* ---- inner child ----*/
+
+.pane {
+    list-style: none;
+}
+
+.pane li {
+    display: inline-block;
+    width: 42%;
+    margin: 3% 3% 0% 2.8%;
+}
+
+.film-select {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.film-select img {
+    width: 100%;
+    transform: scale(1.10);
+    opacity: .7;
+    transition: transform .5s, opacity .5s;
+}
+
+#play-hide {
+    display: none;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.film-select img:hover {
+    cursor: pointer;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.film--1:hover #play-hide,
+.film--2:hover #play-hide,
+.film--3:hover #play-hide,
+.film--4:hover #play-hide {
+    cursor: pointer;
+    display: block;
+    animation: btn-opacity .5s;
+    opacity: 1;
+}
+
+/* ---- texts ----*/
+
+.collection-title-text,
+.collection-desc {
+    font-family: 'Raleway';
+    color: white;
+    letter-spacing: 2px;
+}
+ .collection-title-text {
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+
+     /* width */
+     ::-webkit-scrollbar {
+        width: 3px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: grey;   
+        border-radius: 25px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background:rgba(255, 255, 255, 0.75); 
+        border-radius: 25px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: white; 
+      }
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+      .selection-play {
+        color: white;
+        font-size: 325%;
+    }
+
+    @keyframes btn-opacity {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }

@@ -1,0 +1,31 @@
+
+/* ---------------------------------- */
+/* MAIN PANEL */
+/* ---------------------------------- */
+
+.main-panel {
+    background-color: #0B0B0B;
+}
+
+.gallery-selection {
+    height: 100%;
+    margin: 0 7% 0 7%;
+}
+
+.gallery-port {
+    height: 100%;
+    margin: 0 7% 0 7%;
+}
+
+.gallery-images {
+    list-style: none;
+}
+
+.gallery-images li{
+    width: 35%;
+    padding: 1.5%;
+}
+
+.inner-sel img {
+    width: 100%;
+}

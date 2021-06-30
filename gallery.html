@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="vendor/css/ionicons.min.css">
     <link rel="stylesheet" href="vendor/css/animate.css">
     <link rel="stylesheet" href="css/side-navigation.css">
-    <link rel="stylesheet" href="css/about.css">
-    <title>Reel Films | About</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <title>Reel Films | Gallery</title>
 </head>
-<body class="overflow-hidden">
+<body>
     <header class="container-fluid p-0 d-flex overflow-hidden vh100">
         <div class="container-fluid p-0 bg-white navigation">
             <div class="container-fluid d-flex justify-content-end">
@@ -43,40 +43,52 @@
         </div>
 
         <!-- MAIN PANEL -->
-        
+
         <div class="container-fluid p-0 main-panel">
-            <div class="overflow-hidden">
-                <div class="container-fluid p-0 d-flex main-panel-container">
-                <div class="container-fluid">
-                    <ul class="main-panel-navigation">
+
+            <!-- MAIN CONTAINER -->
+
+            <div class="container-fluid p-0 main-panel-container">
+
+                <!-- TITLE BAR -->
+
+                <div class="main-panel-title">
+                    <ul class="p-0 d-flex">
                         <li>
-                            <a href="/about.html" class="active">about me</a>
+                            <h6 class="title-text">gallery</h6>
                         </li>
-                        <li>
-                            <a href="/films/intramuros.html">films</a>
+                        <li class="title-back">
+                            <a href="/portfolio.html">back<i class="ion-ios-arrow-round-back font-shift"></i></a>
                         </li>
                     </ul>
-                    <div class="container about-description opac-0">
-                        <h4>about me</h4>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h5>
-                    </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="credentials">
-                        <h1 class="name">Carl Ivan<br>Rodriguez</h1>
-                        <h6 class="career">photographer</h6>
-                        <h6 class="career">filmmaker</h6>
-                    </div>
                 </div>
             </div>
-            </div>
-            <div class="container-fluid p-0">
-                <div class="backgroundIMG vh100"></div>
+
+            <!-- CONTENT -->
+            <div class="bg-danger gallery-selection">
+                <div class="bg-success gallery-port">
+                    <ul class="gallery-images d-flex p-0">
+                        <li>
+                            <figure class="inner-sel">
+                                <img src="webp/gallery/IMG_1397-min.webp" alt="">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="inner-sel">
+                                <img src="webp/gallery/IMG_1397-min.webp" alt="">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="inner-sel">
+                                <img src="webp/gallery/IMG_1397-min.webp" alt="">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     
     <script src="vendor/js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
